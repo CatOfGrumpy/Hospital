@@ -7,17 +7,19 @@ public class Main
 {
     public static void main(String[] args)
     {
-        BloodAnalysis bloodAnalysis = new BloodAnalysis("1", "first", "o");
-        UrineAnalysis urineAnalysis = new UrineAnalysis("2", "second", "Green");
-        Patient patient = new Patient("Khabib", 33, "Man");
-        Laboratory laboratory = new Laboratory("abc");
+        BloodAnalysis bloodAnalysis = new BloodAnalysis("1", "Norm", "O");
+        UrineAnalysis urineAnalysis = new UrineAnalysis("2", "Not Norm", "Green");
+        Patient patient = new Patient("Khabib", 33, "Male");
+        Laboratory laboratory = new Laboratory("45");
         System.out.println(bloodAnalysis);
         System.out.println(urineAnalysis);
         System.out.println(patient);
         System.out.println(laboratory);
         laboratory.addAnalysis(bloodAnalysis);
+        laboratory.addAnalysis(urineAnalysis);
         System.out.println(laboratory);
         patient.addAnalysis(urineAnalysis);
         System.out.println(patient.getAnalyses());
+        //mvc
     }
 }
