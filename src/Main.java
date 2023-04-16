@@ -15,7 +15,6 @@ public class Main
         System.out.println(urineAnalysis);
         System.out.println(patient);
         System.out.println(laboratory);
-        bloodAnalysis.performAnalysis();
         laboratory.addAnalysis(bloodAnalysis);
         laboratory.addAnalysis(urineAnalysis);
         System.out.println(laboratory);
