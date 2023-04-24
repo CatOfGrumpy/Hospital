@@ -20,6 +20,5 @@ public class Main
         System.out.println(laboratory);
         patient.addAnalysis(urineAnalysis);
         System.out.println(patient.getAnalyses());
-        //mvc
     }
 }
